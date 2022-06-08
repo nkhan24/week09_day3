@@ -9,13 +9,20 @@
                 - get x, get y
                 - diplay the values in coorvalues paragraph
             */
-        }
+        let elem = document.getElementById("coordiv");
+        document.addEventListener('click', function(event) {
+            let rect = elem.getBoundingClientRect();
+            document.getElementById("coorvalues").innerHTML = "X: " + rect.x + ", " + "Y: " + rect.y;
+        })
+    }
+        
 
         function clearCoor() {
             /*
                 TODO implement the function:
                 - clear coorvalues paragraph
             */
+           
         }
     </script>
 </head>
